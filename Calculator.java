@@ -12,23 +12,26 @@ public class Calculator {
 	
 	//return the final result
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	//perform add operation
 	public void add (int value) {
-		
+		total += value;
 	}
 	//perform sub operation
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	//perform multiply operation
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	//perform divide operation
 	public void divide (int value) {
-		
+		if(value == 0)
+			total = 0;
+		else
+			total /= value;
 	}
 	//get the history of all the operation
 	public String getHistory () {
